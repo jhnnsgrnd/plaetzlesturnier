@@ -1,0 +1,147 @@
+/* ─── RESET & BASE ─────────────────────────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── HEADER & NAV ─────────────────────────────────────────────────────────── */
+.site-header {
+  background-color: #D18640;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 1000;
+}
+.site-header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* desktop nav */
+.nav-links {
+  display: flex;
+}
+.nav-links ul {
+  display: flex;
+  list-style: none;
+}
+.nav-links li + li {
+  margin-left: 1.5rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+/* burger button (hidden on desktop) */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.burger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* mobile nav behavior */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #D18640;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+  }
+  .nav-links.open {
+    max-height: 300px;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .nav-links li + li {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  /* burger → “X” animation */
+  .burger.open .bar:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+  }
+  .burger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.open .bar:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+  }
+}
+
+/* ─── HERO & COUNTDOWN ─────────────────────────────────────────────────────── */
+.hero {
+  flex: 1;
+  position: relative;
+  background: url("../img/background.jpg") center/cover no-repeat;
+  height: calc(100vh - 68px); /* adjust if your header height differs */
+}
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.countdown-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+}
+.countdown-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#countdown {
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+}
+#countdown span {
+  display: inline-block;
+  min-width: 2ch;
+}
+
+
