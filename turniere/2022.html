@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plätzlesturnier Maulbronn – 2022</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/tournament.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="../index.html" style="text-decoration:none;color: white;">Plätzlesturnier - Archiv</a></div>
+    <button class="burger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="../index.html">Über</a></li>
+        <li><a class="active" href="#">Ehem. Turniere</a></li>
+        <li><a href="../mannschaften.html">Mannschaften</a></li>
+        <li><a href="../statistiken.html">Statistiken</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="year-picker container">
+    <a class="year-prev" href="2019.html">← 2019</a>
+    <select id="year-select">
+      <option value="2018.html">2018</option>
+      <option value="2019.html">2019</option>
+      <option value="2022.html" selected>2022</option>
+    </select>
+    <a class="year-next" href="#">—</a>
+  </nav>
+
+  <main class="container tournament-results">
+    <h1>Plätzlesturnier Maulbronn – 2022</h1>
+    <p class="tournament-date">23. Juli 2022</p>
+    <aside class="note">
+      <strong>2020 und 2021 fielen die Turniere pandemiebedingt aus.</strong><br>
+      Es traten nach der langen Pause lediglich 13 Teams an, also wurde der Modus verändert.
+    </aside>
+
+    <!-- Vorrunde -->
+    <section class="phase">
+      <h2>Vorrunde</h2>
+      <div class="phase-tabs">
+        <button class="phase-tab active" data-target="v-g1">Gruppe 1</button>
+        <button class="phase-tab" data-target="v-g2">Gruppe 2</button>
+      </div>
+      <div class="phase-contents">
+        <!-- Gruppe 1 -->
+        <div id="v-g1" class="tab-content active">
+          <div class="tables-grid">
+            <table class="matches">
+              <thead>
+                <tr><th colspan="2">Spiele</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Homo Promo – 20/24</td><td>5 : 2</td></tr>
+                <tr><td>Fünfpass – Schinkenstier</td><td>3 : 0</td></tr>
+                <tr><td>KGK – Scholles Erben</td><td>5 : 1</td></tr>
+                <tr><td>Homo Promo – Fünfpass</td><td>2 : 0</td></tr>
+                <tr><td>KGK – 20/24</td><td>9 : 1</td></tr>
+                <tr><td>Scholles Erben – Fünfpass</td><td>2 : 1</td></tr>
+                <tr><td>Homo Promo – Schinkenstier</td><td>3 : 0</td></tr>
+                <tr><td>Scholles Erben – 20/24</td><td>5 : 0</td></tr>
+                <tr><td>KGK – Fünfpass</td><td>4 : 0</td></tr>
+                <tr><td>Scholles Erben – Schinkenstier</td><td>2 : 0</td></tr>
+                <tr><td>KGK – Homo Promo</td><td>2 : 1</td></tr>
+                <tr><td>Fünfpass – 20/24</td><td>1 : 4</td></tr>
+                <tr><td>KGK – Schinkenstier</td><td>6 : 0</td></tr>
+                <tr><td>Homo Promo – Scholles Erben</td><td>6 : 2</td></tr>
+                <tr><td>20/24 – Schinkenstier</td><td>3 : 4</td></tr>
+              </tbody>
+            </table>
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Punkte</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>KGK</td><td>15</td></tr>
+                <tr><td>2</td><td>Homo Promo</td><td>12</td></tr>
+                <tr><td>3</td><td>Scholles Erben</td><td>9</td></tr>
+                <tr><td>4</td><td>Fünfpass</td><td>3</td></tr>
+                <tr><td>5</td><td>20/24</td><td>3</td></tr>
+                <tr><td>6</td><td>Schinkenstier</td><td>3</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Gruppe 2 -->
+        <div id="v-g2" class="tab-content">
+          <div class="tables-grid">
+            <table class="matches">
+              <thead>
+                <tr><th colspan="2">Spiele</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Schlafschaf – 21/25</td><td>4 : 2</td></tr>
+                <tr><td>Jalg Pallurid – Die Kapitäne</td><td>1 : 3</td></tr>
+                <tr><td>Nuda Spes – Los Ganadores</td><td>2 : 1</td></tr>
+                <tr><td>BSV Flums – Schlafschaf</td><td>6 : 1</td></tr>
+                <tr><td>Jalg Pallurid – 21/25</td><td>2 : 5</td></tr>
+                <tr><td>Die Kapitäne – Los Ganadores</td><td>6 : 0</td></tr>
+                <tr><td>BSV Flums – Nuda Spes</td><td>3 : 2</td></tr>
+                <tr><td>Jalg Pallurid – Schlafschaf</td><td>3 : 2</td></tr>
+                <tr><td>21/25 – Los Ganadores</td><td>0 : 4</td></tr>
+                <tr><td>BSV Flums – Die Kapitäne</td><td>3 : 1</td></tr>
+                <tr><td>Schlafschaf – Nuda Spes</td><td>2 : 2</td></tr>
+                <tr><td>Jalg Pallurid – Los Ganadores</td><td>5 : 1</td></tr>
+                <tr><td>BSV Flums – 21/25</td><td>4 : 0</td></tr>
+                <tr><td>Die Kapitäne – Schlafschaf</td><td>4 : 1</td></tr>
+                <tr><td>BSV Flums – 21/25</td><td>5 : 0</td></tr>
+                <tr><td>Jalg Pallurid – Nuda Spes</td><td>5 : 1</td></tr>
+                <tr><td>Die Kapitäne – 21/25</td><td>11 : 0</td></tr>
+                <tr><td>Schlafschaf – Los Ganadores</td><td>0 : 2</td></tr>
+                <tr><td>BSV Flums – Los Ganadores</td><td>4 : 1</td></tr>
+                <tr><td>Die Kapitäne – Nuda Spes</td><td>3 : 2</td></tr>
+              </tbody>
+            </table>
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Punkte</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>BSV Flums</td><td>18</td></tr>
+                <tr><td>2</td><td>Die Kapitäne</td><td>15</td></tr>
+                <tr><td>3</td><td>Jalg Pallurid</td><td>12</td></tr>
+                <tr><td>4</td><td>Nuda Spes</td><td>7</td></tr>
+                <tr><td>5</td><td>Los Ganadores</td><td>6</td></tr>
+                <tr><td>6</td><td>Schlafschaf</td><td>4</td></tr>
+                <tr><td>7</td><td>Prom. 21/25</td><td>0</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Endrunde -->
+    <section class="phase endrunde-phase">
+      <h2>Endrunde</h2>
+      <div class="endrunde-desktop">
+        <table class="matches endrunde">
+          <tbody>
+            <tr><th>Halbfinale</th><td>BSV Flums – Homo Promo</td><td>2 : 3</td></tr>
+            <tr><th>Halbfinale</th><td>KGK – Die Kapitäne</td><td>2 : 0</td></tr>
+            <tr><th>Spiel um Platz 3</th><td>BSV Flums – Die Kapitäne</td><td>0 : 4</td></tr>
+            <tr><th>Finale</th><td>Homo Promo – KGK</td><td>0 : 1</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="endrunde-mobile">
+        <ul class="endrunde-list">
+          <li>
+            <span class="round">Halbfinale</span>
+            <div class="match-score">
+              <span class="match">BSV Flums – Homo Promo</span>
+              <span class="score">2 : 3</span>
+            </div>
+          </li>
+          <li>
+            <span class="round">Halbfinale</span>
+            <div class="match-score">
+              <span class="match">KGK – Die Kapitäne</span>
+              <span class="score">2 : 0</span>
+            </div>
+          </li>
+          <li>
+            <span class="round">Spiel um Platz 3</span>
+            <div class="match-score">
+              <span class="match">BSV Flums – Die Kapitäne</span>
+              <span class="score">0 : 4</span>
+            </div>
+          </li>
+          <li>
+            <span class="round">Finale</span>
+            <div class="match-score">
+              <span class="match">Homo Promo – KGK</span>
+              <span class="score">0 : 1</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Endstand -->
+    <section class="phase">
+      <h2>Endstand</h2>
+      <ol class="final-standings">
+        <li>KGK</li>
+        <li>Homo Promo</li>
+        <li>Die Kapitäne</li>
+        <li>BSV Flums</li>
+      </ol>
+      <aside class="note">
+        Modus geändert wegen reduzierter Teamanzahl nach der Corona-Pause.
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2024 Plätzlesturnier Maulbronn
+    </div>
+  </footer>
+  <script src="../js/header.js" defer></script>
+  <script src="../js/tournament-nav.js" defer></script>
+  <script src="../js/tournament.js" defer></script>
+</body>
+</html>

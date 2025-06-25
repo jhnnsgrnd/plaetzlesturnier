@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plätzlesturnier Maulbronn – 2015</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/tournament.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="../index.html" style="text-decoration:none;color: white;">Plätzlesturnier - Archiv</a></div>
+    <button class="burger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="../index.html">Über</a></li>
+        <li><a class="active" href="#">Ehem. Turniere</a></li>
+        <li><a href="../mannschaften.html">Mannschaften</a></li>
+        <li><a href="../statistiken.html">Statistiken</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="year-picker container">
+    <a class="year-prev" href="2014.html">← 2014</a>
+    <select id="year-select">
+      <option value="1985.html">1985</option>
+      <!-- ...other years... -->
+      <option value="2014.html">2014</option>
+      <option value="2015.html" selected>2015</option>
+      <option value="2016.html">2016</option>
+      <option value="2017.html">2017</option>
+      <option value="2018.html">2018</option>
+      <option value="2019.html">2019</option>
+      <option value="2022.html">2022</option>
+    </select>
+    <a class="year-next" href="2016.html">2016 →</a>
+  </nav>
+
+  <main class="container tournament-results">
+    <h1>Plätzlesturnier Maulbronn – 2015</h1>
+    <p class="tournament-date">18. Juli 2015</p>
+
+    <!-- Vorrunde -->
+    <section class="phase">
+      <h2>Vorrunde</h2>
+      <div class="phase-tabs">
+        <button class="phase-tab active" data-target="v-g1">Gruppe 1</button>
+        <button class="phase-tab" data-target="v-g2">Gruppe 2</button>
+        <button class="phase-tab" data-target="v-g3">Gruppe 3</button>
+        <button class="phase-tab" data-target="v-g4">Gruppe 4</button>
+      </div>
+      <div class="phase-contents">
+        <!-- Gruppe 1 -->
+        <div id="v-g1" class="tab-content active">
+          <div class="tables-grid">
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Tor (±)</th><th>Pkt.</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>BSV Flums</td><td>12 : 6</td><td>9</td></tr>
+                <tr><td>2</td><td>Windrad</td><td>4 : 3</td><td>6</td></tr>
+                <tr><td>3</td><td>Die Kapitäne</td><td>6 : 6</td><td>3</td></tr>
+                <tr><td>4</td><td>DZR/HDT</td><td>1 : 8</td><td>0</td></tr>
+              </tbody>
+            </table>
+            <table class="matches">
+              <tbody>
+                <tr><td>BSV Flums – DZR/HDT</td><td>4 : 1</td></tr>
+                <tr><td>Windrad – Die Kapitäne</td><td>1 : 0</td></tr>
+                <tr><td>BSV Flums – Windrad</td><td>3 : 2</td></tr>
+                <tr><td>DZR/HDT – Die Kapitäne</td><td>0 : 3</td></tr>
+                <tr><td>BSV Flums – Die Kapitäne</td><td>5 : 3</td></tr>
+                <tr><td>DZR/HDT – Windrad</td><td>0 : 1</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Gruppe 2 -->
+        <div id="v-g2" class="tab-content">
+          <div class="tables-grid">
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Tor (±)</th><th>Pkt.</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>KGK</td><td>12 : 1</td><td>9</td></tr>
+                <tr><td>2</td><td>Elchzebras</td><td>4 : 4</td><td>6</td></tr>
+                <tr><td>3</td><td>Fünfpass</td><td>5 : 7</td><td>3</td></tr>
+                <tr><td>4</td><td>Nuda Spes</td><td>1 : 10</td><td>0</td></tr>
+              </tbody>
+            </table>
+            <table class="matches">
+              <tbody>
+                <tr><td>KGK – Elchzebras</td><td>3 : 0</td></tr>
+                <tr><td>Nuda Spes – Fünfpass</td><td>1 : 3</td></tr>
+                <tr><td>KGK – Nuda Spes</td><td>5 : 0</td></tr>
+                <tr><td>Elchzebras – Fünfpass</td><td>2 : 1</td></tr>
+                <tr><td>KGK – Fünfpass</td><td>4 : 1</td></tr>
+                <tr><td>Elchzebras – Nuda Spes</td><td>2 : 0</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Gruppe 3 -->
+        <div id="v-g3" class="tab-content">
+          <div class="tables-grid">
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Tor (±)</th><th>Pkt.</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Scholles Erben</td><td>13 : 1</td><td>12</td></tr>
+                <tr><td>2</td><td>Jalg Pallurid</td><td>8 : 5</td><td>6</td></tr>
+                <tr><td>3</td><td>Klosterfrau</td><td>4 : 7</td><td>3</td></tr>
+                <tr><td>4</td><td>Balzspackers</td><td>3 : 15</td><td>0</td></tr>
+              </tbody>
+            </table>
+            <table class="matches">
+              <tbody>
+                <tr><td>Jalg Pallurid – Scholles Erben</td><td>0 : 4</td></tr>
+                <tr><td>Balzspackers – Klosterfrau</td><td>1 : 4</td></tr>
+                <tr><td>Jalg Pallurid – Balzspackers</td><td>5 : 1</td></tr>
+                <tr><td>Scholles Erben – Klosterfrau</td><td>6 : 0</td></tr>
+                <tr><td>Jalg Pallurid – Klosterfrau</td><td>3 : 0</td></tr>
+                <tr><td>Scholles Erben – Balzspackers</td><td>6 : 1</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Gruppe 4 -->
+        <div id="v-g4" class="tab-content">
+          <div class="tables-grid">
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Tor (±)</th><th>Pkt.</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Krawallungies</td><td>9 : 3</td><td>9</td></tr>
+                <tr><td>2</td><td>Los Ganadores</td><td>11 : 3</td><td>8</td></tr>
+                <tr><td>3</td><td>DKP</td><td>4 : 8</td><td>3</td></tr>
+                <tr><td>4</td><td>Klasse 9</td><td>3 : 13</td><td>0</td></tr>
+              </tbody>
+            </table>
+            <table class="matches">
+              <tbody>
+                <tr><td>Krawallungies – DKP</td><td>3 : 0</td></tr>
+                <tr><td>Los Ganadores – Klasse 9</td><td>6 : 0</td></tr>
+                <tr><td>Krawallungies – Los Ganadores</td><td>3 : 1</td></tr>
+                <tr><td>DKP – Klasse 9</td><td>4 : 1</td></tr>
+                <tr><td>Krawallungies – Klasse 9</td><td>3 : 2</td></tr>
+                <tr><td>DKP – Los Ganadores</td><td>0 : 4</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zwischenrunde -->
+    <section class="phase">
+      <h2>Zwischenrunde</h2>
+      <div class="phase-tabs">
+        <button class="phase-tab active" data-target="z-g1">Gruppe 1</button>
+        <button class="phase-tab" data-target="z-g2">Gruppe 2</button>
+      </div>
+      <div class="phase-contents">
+        <!-- Gruppe 1 -->
+        <div id="z-g1" class="tab-content active">
+          <div class="tables-grid">
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Tor (±)</th><th>Pkt.</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Scholles Erben</td><td>8 : 4</td><td>6</td></tr>
+                <tr><td>2</td><td>BSV Flums</td><td>5 : 2</td><td>6</td></tr>
+                <tr><td>3</td><td>Los Ganadores</td><td>4 : 4</td><td>6</td></tr>
+                <tr><td>4</td><td>Elchzebras</td><td>1 : 8</td><td>0</td></tr>
+              </tbody>
+            </table>
+            <table class="matches">
+              <tbody>
+                <tr><td>BSV Flums – Elchzebras</td><td>2 : 0</td></tr>
+                <tr><td>Scholles Erben – Los Ganadores</td><td>4 : 0</td></tr>
+                <tr><td>BSV Flums – Scholles Erben</td><td>3 : 0</td></tr>
+                <tr><td>Elchzebras – Los Ganadores</td><td>0 : 2</td></tr>
+                <tr><td>BSV Flums – Los Ganadores</td><td>0 : 2</td></tr>
+                <tr><td>Elchzebras – Scholles Erben</td><td>1 : 4</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Gruppe 2 -->
+        <div id="z-g2" class="tab-content">
+          <div class="tables-grid">
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Tor (±)</th><th>Pkt.</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Jalg Pallurid</td><td>6 : 4</td><td>7</td></tr>
+                <tr><td>2</td><td>KGK</td><td>3 : 2</td><td>5</td></tr>
+                <tr><td>3</td><td>Krawallungies</td><td>6 : 5</td><td>1</td></tr>
+                <tr><td>4</td><td>Windrad</td><td>1 : 5</td><td>1</td></tr>
+              </tbody>
+            </table>
+            <table class="matches">
+              <tbody>
+                <tr><td>Windrad – KGK</td><td>0 : 0</td></tr>
+                <tr><td>Jalg Pallurid – Krawallungies</td><td>3 : 2</td></tr>
+                <tr><td>Windrad – Jalg Pallurid</td><td>1 : 2</td></tr>
+                <tr><td>KGK – Krawallungies</td><td>2 : 1</td></tr>
+                <tr><td>Windrad – Krawallungies</td><td>0 : 3</td></tr>
+                <tr><td>KGK – Jalg Pallurid</td><td>1 : 1</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Endrunde -->
+    <section class="phase endrunde-phase">
+      <h2>Endrunde</h2>
+      <div class="endrunde-desktop">
+        <table class="matches endrunde">
+          <tbody>
+            <tr><th>Halbfinale</th><td>Scholles Erben – KGK</td><td>1 : 0 (Zusatz)</td></tr>
+            <tr><th>Halbfinale</th><td>Jalg Pallurid – BSV Flums</td><td>1 : 4 (Zusatz)</td></tr>
+            <tr><th>Spiel um Platz 3</th><td>KGK – Jalg Pallurid</td><td>2 : 2, 3 : 1 n.s.</td></tr>
+            <tr><th>Finale</th><td>Scholles Erben – BSV Flums</td><td>0 : 2 (Zusatz)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="endrunde-mobile">
+        <ul class="endrunde-list">
+          <li>
+            <span class="round">Halbfinale</span>
+            <div class="match-score">
+              <span class="match">Scholles Erben – KGK</span>
+              <span class="score">1 : 0 <span class="extra">(Zusatz)</span></span>
+            </div>
+          </li>
+          <li>
+            <span class="round">Halbfinale</span>
+            <div class="match-score">
+              <span class="match">Jalg Pallurid – BSV Flums</span>
+              <span class="score">1 : 4 <span class="extra">(Zusatz)</span></span>
+            </div>
+          </li>
+          <li>
+            <span class="round">Spiel um Platz 3</span>
+            <div class="match-score">
+              <span class="match">KGK – Jalg Pallurid</span>
+              <span class="score">2 : 2, 3 : 1 n.s.</span>
+            </div>
+          </li>
+          <li>
+            <span class="round">Finale</span>
+            <div class="match-score">
+              <span class="match">Scholles Erben – BSV Flums</span>
+              <span class="score">0 : 2 <span class="extra">(Zusatz)</span></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Endstand -->
+    <section class="phase">
+      <h2>Endstand</h2>
+      <ol class="final-standings">
+        <li>BSV Flums</li>
+        <li>Scholles Erben</li>
+        <li>KGK</li>
+        <li>Jalg Pallurid</li>
+      </ol>
+      <aside class="note">(Bemerkungen)</aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2024 Plätzlesturnier Maulbronn
+    </div>
+  </footer>
+  <script src="../js/header.js" defer></script>
+  <script src="../js/tournament-nav.js" defer></script>
+  <script src="../js/tournament.js" defer></script>
+</body>
+</html>

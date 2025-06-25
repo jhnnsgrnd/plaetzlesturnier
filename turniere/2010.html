@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plätzlesturnier Maulbronn – 2010</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/tournament.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="../index.html" style="text-decoration:none;color: white;">Plätzlesturnier - Archiv</a></div>
+    <button class="burger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="../index.html">Über</a></li>
+        <li><a class="active" href="#">Ehem. Turniere</a></li>
+        <li><a href="../mannschaften.html">Mannschaften</a></li>
+        <li><a href="../statistiken.html">Statistiken</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="year-picker container">
+    <a class="year-prev" href="2009.html">← 2009</a>
+    <select id="year-select">
+      <!-- other options omitted for brevity -->
+      <option value="2009.html">2009</option>
+      <option value="2010.html" selected>2010</option>
+      <option value="2011.html">2011</option>
+      <option value="2012.html">2012</option>
+      <!-- ... -->
+    </select>
+    <a class="year-next" href="2011.html">2011 →</a>
+  </nav>
+
+  <main class="container tournament-results">
+    <h1>Plätzlesturnier Maulbronn – 2010</h1>
+    <p class="tournament-date">10. Juli 2010</p>
+
+    <!-- Vorrunde -->
+    <section class="phase">
+      <h2>Vorrunde</h2>
+      <div class="phase-tabs">
+        <button class="phase-tab active" data-target="v-g1">Gruppe 1</button>
+        <button class="phase-tab" data-target="v-g2">Gruppe 2</button>
+        <button class="phase-tab" data-target="v-g3">Gruppe 3</button>
+        <button class="phase-tab" data-target="v-g4">Gruppe 4</button>
+      </div>
+      <div class="phase-contents">
+        <!-- Gruppe 1 -->
+        <div id="v-g1" class="tab-content active">
+          <div class="tables-grid">
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Tor (±)</th><th>Pkt.</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Maulbronn 10</td><td>8 : 1</td><td>7</td></tr>
+                <tr><td>2</td><td>Bravo Girl</td><td>6 : 5</td><td>6</td></tr>
+                <tr><td>3</td><td>KGK</td><td>6 : 5</td><td>4</td></tr>
+                <tr><td>4</td><td>HDT</td><td>2 : 11</td><td>0</td></tr>
+              </tbody>
+            </table>
+            <table class="matches">
+              <tbody>
+                <tr><td>KGK – Maulbronn 10</td><td>1 : 1</td></tr>
+                <tr><td>Bravo Girl – HDT</td><td>4 : 0</td></tr>
+                <tr><td>KGK – Bravo Girl</td><td>1 : 2</td></tr>
+                <tr><td>Maulbronn 10 – HDT</td><td>3 : 0</td></tr>
+                <tr><td>KGK – HDT</td><td>4 : 2</td></tr>
+                <tr><td>Maulbronn 10 – Bravo Girl</td><td>4 : 0</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Gruppe 2 -->
+        <div id="v-g2" class="tab-content">
+          <div class="tables-grid">
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Tor (±)</th><th>Pkt.</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Balzspackers</td><td>4 : 2</td><td>7</td></tr>
+                <tr><td>2</td><td>Blaubeuren 11</td><td>2 : 1</td><td>5</td></tr>
+                <tr><td>3</td><td>Elchzebras</td><td>2 : 2</td><td>4</td></tr>
+                <tr><td>4</td><td>Krawalleros</td><td>2 : 5</td><td>0</td></tr>
+              </tbody>
+            </table>
+            <table class="matches">
+              <tbody>
+                <tr><td>Blaubeuren 11 – Elchzebras</td><td>1 : 1</td></tr>
+                <tr><td>Krawalleros – Balzspackers</td><td>2 : 3</td></tr>
+                <tr><td>Blaubeuren 11 – Krawalleros</td><td>1 : 0</td></tr>
+                <tr><td>Elchzebras – Balzspackers</td><td>0 : 1</td></tr>
+                <tr><td>Blaubeuren 11 – Balzspackers</td><td>0 : 0</td></tr>
+                <tr><td>Elchzebras – Krawalleros</td><td>1 : 0</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Gruppe 3 -->
+        <div id="v-g3" class="tab-content">
+          <div class="tables-grid">
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Tor (±)</th><th>Pkt.</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>FHS</td><td>8 : 1</td><td>9</td></tr>
+                <tr><td>2</td><td>DwM</td><td>5 : 2</td><td>6</td></tr>
+                <tr><td>3</td><td>DZR</td><td>2 : 6</td><td>1</td></tr>
+                <tr><td>4</td><td>Klosterfrau</td><td>2 : 8</td><td>1</td></tr>
+              </tbody>
+            </table>
+            <table class="matches">
+              <tbody>
+                <tr><td>DwM – DZR</td><td>1 : 0</td></tr>
+                <tr><td>FHS – Klosterfrau</td><td>3 : 0</td></tr>
+                <tr><td>DwM – FHS</td><td>0 : 1</td></tr>
+                <tr><td>DZR – Klosterfrau</td><td>0 : 1</td></tr>
+                <tr><td>DwM – Klosterfrau</td><td>4 : 1</td></tr>
+                <tr><td>DZR – FHS</td><td>1 : 4</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Gruppe 4 -->
+        <div id="v-g4" class="tab-content">
+          <div class="tables-grid">
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Tor (±)</th><th>Pkt.</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Scholles Erben</td><td>7 : 2</td><td>6</td></tr>
+                <tr><td>2</td><td>Lungies</td><td>7 : 3</td><td>6</td></tr>
+                <tr><td>3</td><td>Windrad</td><td>3 : 2</td><td>6</td></tr>
+                <tr><td>4</td><td>Maulbronn 9</td><td>0 : 10</td><td>0</td></tr>
+              </tbody>
+            </table>
+            <table class="matches">
+              <tbody>
+                <tr><td>Lungies – Scholles Erben</td><td>2 : 1</td></tr>
+                <tr><td>Windrad – Maulbronn 9</td><td>1 : 0</td></tr>
+                <tr><td>Lungies – Windrad</td><td>0 : 2</td></tr>
+                <tr><td>Scholles Erben – Maulbronn 9</td><td>4 : 0</td></tr>
+                <tr><td>Lungies – Maulbronn 9</td><td>5 : 0</td></tr>
+                <tr><td>Scholles Erben – Windrad</td><td>2 : 0</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zwischenrunde -->
+    <section class="phase">
+      <h2>Zwischenrunde</h2>
+      <div class="phase-tabs">
+        <button class="phase-tab active" data-target="z-g1">Gruppe 1</button>
+        <button class="phase-tab" data-target="z-g2">Gruppe 2</button>
+      </div>
+      <div class="phase-contents">
+        <!-- Gruppe 1 -->
+        <div id="z-g1" class="tab-content active">
+          <div class="tables-grid">
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Tor (±)</th><th>Pkt.</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Lungies</td><td>9 : 4</td><td>5</td></tr>
+                <tr><td>2</td><td>Maulbronn 10</td><td>4 : 4</td><td>6</td></tr>
+                <tr><td>3</td><td>Blaubeuren 11</td><td>5 : 5</td><td>4</td></tr>
+                <tr><td>4</td><td>FHS</td><td>4 : 9</td><td>-5</td></tr>
+              </tbody>
+            </table>
+            <table class="matches">
+              <tbody>
+                <tr><td>Maulbronn 10 – Blaubeuren 11</td><td>1 : 0</td></tr>
+                <tr><td>FHS – Lungies</td><td>1 : 4</td></tr>
+                <tr><td>Maulbronn 10 – FHS</td><td>2 : 1</td></tr>
+                <tr><td>Blaubeuren 11 – Lungies</td><td>2 : 2</td></tr>
+                <tr><td>Maulbronn 10 – Lungies</td><td>1 : 3</td></tr>
+                <tr><td>Blaubeuren 11 – FHS</td><td>3 : 2</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Gruppe 2 -->
+        <div id="z-g2" class="tab-content">
+          <div class="tables-grid">
+            <table class="standings">
+              <thead>
+                <tr><th>#</th><th>Team</th><th>Tor (±)</th><th>Pkt.</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Scholles Erben</td><td>5 : 1</td><td>7</td></tr>
+                <tr><td>2</td><td>Bravo Girl</td><td>2 : 2</td><td>4</td></tr>
+                <tr><td>3</td><td>DwM</td><td>2 : 3</td><td>4</td></tr>
+                <tr><td>4</td><td>Balzspackers</td><td>2 : 5</td><td>3</td></tr>
+              </tbody>
+            </table>
+            <table class="matches">
+              <tbody>
+                <tr><td>Bravo Girl – Balzspackers</td><td>1 : 0</td></tr>
+                <tr><td>DwM – Scholles Erben</td><td>0 : 1</td></tr>
+                <tr><td>Bravo Girl – DwM</td><td>1 : 2</td></tr>
+                <tr><td>Balzspackers – Scholles Erben</td><td>1 : 4</td></tr>
+                <tr><td>Bravo Girl – Scholles Erben</td><td>0 : 0</td></tr>
+                <tr><td>Balzspackers – DwM</td><td>1 : 0</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Endrunde -->
+    <section class="phase endrunde-phase">
+      <h2>Endrunde</h2>
+      <div class="endrunde-desktop">
+        <table class="matches endrunde">
+          <tbody>
+            <tr><th>Halbfinale</th><td>Lungies – Bravo Girl</td><td>1 : 0 (Zusatz)</td></tr>
+            <tr><th>Halbfinale</th><td>Scholles Erben – Maulbronn 10</td><td>1 : 0 (Zusatz)</td></tr>
+            <tr><th>Spiel um Platz 3</th><td>Bravo Girl – Maulbronn 10</td><td>2 : 3 nur Siebenmeterschießen (Zusatz)</td></tr>
+            <tr><th>Finale</th><td>Lungies – Scholles Erben</td><td>1 : 1 n.V. 3:4 nach Siebenmeterschießen (Zusatz)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="endrunde-mobile">
+        <ul class="endrunde-list">
+          <li>
+            <span class="round">Halbfinale</span>
+            <div class="match-score">
+              <span class="match">Lungies – Bravo Girl</span>
+              <span class="score">1 : 0 <span class="extra">(Zusatz)</span></span>
+            </div>
+          </li>
+          <li>
+            <span class="round">Halbfinale</span>
+            <div class="match-score">
+              <span class="match">Scholles Erben – Maulbronn 10</span>
+              <span class="score">1 : 0 <span class="extra">(Zusatz)</span></span>
+            </div>
+          </li>
+          <li>
+            <span class="round">Spiel um Platz 3</span>
+            <div class="match-score">
+              <span class="match">Bravo Girl – Maulbronn 10</span>
+              <span class="score">2 : 3 nur Siebenmeterschießen <span class="extra">(Zusatz)</span></span>
+            </div>
+          </li>
+          <li>
+            <span class="round">Finale</span>
+            <div class="match-score">
+              <span class="match">Lungies – Scholles Erben</span>
+              <span class="score">1 : 1 n.V. 3:4 nach Siebenmeterschießen <span class="extra">(Zusatz)</span></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Endstand -->
+    <section class="phase">
+      <h2>Endstand</h2>
+      <ol class="final-standings">
+        <li>Scholles Erben</li>
+        <li>Lungies</li>
+        <li>Maulbronn 10</li>
+        <li>Bravo Girl</li>
+      </ol>
+      <aside class="note">
+        Mit 39 Grad heißestes Turnier aller Zeiten, gefolgt von 1984 (34 Grad). Extreme physische Leistungen aller Spieler, sehr viele 1:0-Ergebnisse.
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2024 Plätzlesturnier Maulbronn
+    </div>
+  </footer>
+  <script src="../js/header.js" defer></script>
+  <script src="../js/tournament-nav.js" defer></script>
+  <script src="../js/tournament.js" defer></script>
+</body>
+</html>
