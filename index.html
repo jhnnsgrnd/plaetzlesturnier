@@ -1,23 +1,56 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="de">
 <head>
-    <title>Hello Deploy Now build with plain html</title>
-    <link rel="stylesheet" href="./main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plätzlesturnier</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tournament.css" />
 </head>
-
 <body>
-    <div class="main">
-        <h1>
-            Hello Deploy Now build with plain html
-        </h1>
-        <div>
-            <a href="https://ionos.space/setup?repo=https://github.com/ionos-deploy-now/hello-plain-html"
-                target="_blank">
-                <img src="https://images.ionos.space/deploy-now-icons/deploy-to-ionos-btn.svg" />
-            </a>
-        </div>
-    </div>
-</body>
+  <!--─────────────────────────────────────────────────────────────────────────
+     HEADER WITH BURGER & NAV
+  ───────────────────────────────────────────────────────────────────────────-->
+  <header class="site-header">
+    <div class="logo"><a href="index.html" style="text-decoration:none;color: white;">Plätzlesturnier - Archiv</a></div>
 
+    <button class="burger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Über</a></li>
+        <li><a href="turniere/2022.html">Ehem. Turniere</a></li>
+        <li><a href="mannschaften.html">Mannschaften</a></li>
+        <li><a href="statistiken.html">Statistiken</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--─────────────────────────────────────────────────────────────────────────
+     HERO / COUNTDOWN
+  ───────────────────────────────────────────────────────────────────────────-->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="countdown-container">
+      <h1>50 Jahre Plätzlesturnier:</h1>
+      <div id="countdown">
+        <span id="days">00</span>d :
+        <span id="hours">00</span>h :
+        <span id="mins">00</span>m :
+        <span id="secs">00</span>s
+      </div>
+    </div>
+  </section>
+
+  <script src="js/countdown.js" defer></script>
+  <script src="js/header.js" defer></script>
+</body>
 </html>
