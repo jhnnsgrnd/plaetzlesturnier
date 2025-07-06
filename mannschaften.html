@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plätzlesturniere – Mannschaftsnamenlegende</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Global & tournament CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/tournament.css">
+
+  <style>
+    /* Sortierhinweis im Header */
+    .standings.sortable th {
+      cursor: pointer;
+      position: relative;
+      padding-right: 1.5em;
+    }
+    .standings.sortable th::after {
+      content: "⇅";
+      position: absolute;
+      right: 0.5em;
+      font-size: 0.8em;
+      color: #888;
+    }
+    .standings.sortable th.sorted-asc::after {
+      content: "↑";
+    }
+    .standings.sortable th.sorted-desc::after {
+      content: "↓";
+    }
+  </style>
+</head>
+<body>
+  <!-- ── HEADER WITH BURGER & NAV ───────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="../index.html" style="text-decoration:none; color:white;">Plätzlesturnier – Archiv</a>
+    </div>
+
+    <button class="burger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="../index.html">Über</a></li>
+        <li><a href="./turniere/2022.html">Ehem. Turniere</a></li>
+        <li><a class="active" href="./mannschaften.html">Mannschaften</a></li>
+        <li><a href="./statistiken.html">Statistiken</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── MAIN CONTENT ───────────────────────────────────────────────────────── -->
+  <main class="container">
+    <br>
+    <div style="overflow-x:auto">
+<table class="standings sortable">
+  <thead>
+    <tr>
+      <th onclick="sortTable(0)">Name</th>
+      <th onclick="sortTable(1)">Promotion</th>
+      <th onclick="sortTable(2)">Beschreibung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Andas</td><td>75/79</td><td></td></tr>
+    <tr><td>Apostel</td><td></td><td></td></tr>
+    <tr><td>Asbach</td><td></td><td></td></tr>
+    <tr><td>Auburn Tigers</td><td></td><td>Teilnahme in den 80ern</td></tr>
+    <tr><td>Balzspackers</td><td><b>vor 2008:</b><br> 88/93 + 87/92 <br> <b>ab 2008:</b> <br> 88/93 + 87/92 + 86/91 <br> <b>ab 2010:</b> <br>  88/93 + 87/92 + 86/91 + 05/10</td><td></td></tr>
+    <tr><td>Becks Pistols</td><td>91/96</td><td></td></tr>
+    <tr><td>Bet and Win</td><td>04/09</td><td></td></tr>
+    <tr><td>Blaubeuren 1</td><td></td><td>Wechselnde Promotionen</td></tr>
+    <tr><td>Bravo Girl</td><td>00/05</td><td></td></tr>
+    <tr><td>Breakfast Club </td><td></td><td>Stift Tübingen (Gengnagel, Peter Miller)</td></tr>
+    <tr><td>BSV Flums</td><td>07/12</td><td></td></tr>
+    <tr><td>Chirurgische</td><td></td><td></td></tr>
+    <tr><td>Dezibals Rache</td><td></td><td></td></tr>
+    <tr><td>DKP</td><td>08/12</td><td>(=KKU)</td></tr>
+    <tr><td>Die Duppels</td><td>76/81</td><td>plus zahllose Duppels</td></tr>
+    <tr><td>DwM</td><td>01/06</td><td><b>D</b>ie <b>w</b>eißen <b>M</b>arokkaner</td></tr>
+    <tr><td>Dynamo Windrad</td><td>90/95</td><td></td></tr>
+    <tr><td>DZR</td><td>93/98</td><td><b>D</b>ie <b>z</b>arten <b>R</b>ebhühner</td></tr>
+    <tr><td>Die Ehemaligen</td><td>72/76</td><td></td></tr>
+    <tr><td>Elch</td><td>76/81</td><td></td></tr>
+    <tr><td>Emma </td><td>78/83</td><td>Frauenteam, Basis</td></tr>
+	<tr><td>Jalg Pallurid</td><td>11/15</td><td>(=Raff dich, Semi!)</td></tr>
+    <tr><td>Los Ganadores</td><td>12/16</td><td></td></tr>
+    <tr><td>Gorilillas</td><td></td><td></td></tr>
+    <tr><td>Guths Muths</td><td></td><td>Teilnahme in den 80ern</td></tr>
+    <tr><td>Hadschipäou</td><td></td><td>Auch als Namenlos angetreten</td></tr>
+    <tr><td>HdT</td><td>94/99 + Alf</td><td><b>H</b>auch <b>d</b>es <b>T</b>odes</td></tr>
+    <tr><td>Jugendzentrum</td><td></td><td></td></tr>
+    <tr><td>Maulbronn</td><td></td><td>Teilnahme 1982–1984</td></tr>
+    <tr><td>Die Kapitäne</td><td>13/17</td><td></td></tr>
+    <tr><td>KGK</td><td></td><td><b>K</b>ick<b>g</b>emeinschaft <b>K</b>losterhof; Ev. Jugendwerk Blaubeuren</td></tr>
+    <tr><td>Kick and Rush</td><td></td><td></td></tr>
+    <tr><td>KKU</td><td>08/12</td><td>(=DKP)</td></tr>
+    <tr><td>Klosterfrau</td><td></td><td>Nachfolger von Emma als Frauenteam</td></tr>
+    <tr><td>Knackers</td><td></td><td></td></tr>
+    <tr><td>Kombinat</td><td></td><td>Teilnahme Mitte der 80er</td></tr>
+    <tr><td>Komplizen</td><td></td><td></td></tr>
+    <tr><td>Krawalleros</td><td>04/09 + 05/10</td><td></td></tr>
+    <tr><td>Ladypower</td><td></td><td>Frauenteam</td></tr>
+    <tr><td>Loser</td><td></td><td></td></tr>
+    <tr><td>Lungies</td><td>99/04</td><td></td></tr>
+    <tr><td>Massendefekt</td><td>98/03</td><td></td></tr>
+    <tr><td>Mixed Pickles</td><td></td><td></td></tr>
+    <tr><td>Namenlos</td><td></td><td>(=Hadschipäou)</td></tr>
+    <tr><td>Neon Light</td><td></td><td></td></tr>
+    <tr><td>No Name</td><td></td><td></td></tr>
+    <tr><td>Notschlächter</td><td>96/01</td><td></td></tr>
+    <tr><td>Nuda Spes</td><td>10/14</td><td></td></tr>
+    <tr><td>Old Boys Mulich</td><td>72/76</td><td></td></tr>
+    <tr><td>Die Profilierungsgeilen</td><td>87/92</td><td></td></tr>
+    <tr><td>Progymnasium</td><td></td><td>Ende 80er mehrfach dabei</td></tr>
+    <tr><td>Raff dich, Semi!</td><td>11/15</td><td>(=Jalg Pallurid)</td></tr>
+    <tr><td>Rapid Abwärts</td><td>76/81</td><td></td></tr>
+    <tr><td>Rapid Elch</td><td>76/81</td><td>Auch angetreten als Rapid Hannes, Rapid Abwärts</td></tr>
+    <tr><td>Rapid Hannes</td><td>76/81</td><td></td></tr>
+    <tr><td>Reifen</td><td></td><td>Teilnahme Mitte der 80er</td></tr>
+    <tr><td>Rüpel</td><td></td><td></td></tr>
+    <tr><td>Schlolles Erben</td><td>92/97</td><td></td></tr>
+    <tr><td>Schwuzze</td><td></td><td>Teilnahme in den 80ern</td></tr>
+    <tr><td>Sextouristen</td><td>88/93</td><td></td></tr>
+    <tr><td>Spielverderber</td><td>85/90</td><td></td></tr>
+    <tr><td>Stadt Maulbronn</td><td></td><td>Teilnahme 1975 und 1976</td></tr>
+    <tr><td>Stubenhocker</td><td>78/83</td><td></td></tr>
+    <tr><td>Surprise</td><td></td><td>Blaubeurer Team mit Siegloch, Anhorn, Breitinger, Hettich</td></tr>
+    <tr><td>TLPP</td><td><b>vor 1987:</b><br>86/91<br><b>Ab 1997:</b><br>86/91 + 88/93</td><td><b>T</b>iny <b>L</b>ittle <b>P</b>enis <b>P</b>ainters (Letzter Auftritt: 2003)</td></tr>
+    <tr><td>Tote Hose</td><td></td><td></td></tr>
+    <tr><td>Transmimer</td><td></td><td>auch Mimer (Klenk, Süße, Metzger)</td></tr>
+    <tr><td>Turkmania Hubi</td><td>89/94</td><td></td></tr>
+    <tr><td>Weigel</td><td>81/86</td><td>auch Dynamo Weigel, Weigel 85, Weigel 88, Weigel 89, Weigel 90, Weigel 09, Special Friends, Matzes Allstars</td></tr>
+    <tr><td>Young Boys</td><td></td><td>Teilnahme 1988 (Maulbronner Stadtmannschaft)</td></tr>
+    <tr><td>Young Boys Blabich</td><td>70/74</td><td></td></tr>
+    <tr><td>Zebras</td><td>72/76</td><td>Name Zebras ab 1984, vorher einfach 72/76; 1989 angetreten als Andas, 2005 und 2006 als Old Boys Mulich; 75,76,80,81 mit zwei Teams dabei, eines hieß dann Die Ehemaligen</td></tr>
+    <tr><td>Zorn Gottes</td><td>84/89</td><td></td></tr>
+  </tbody>
+</table>
+    </div>
+  </main>
+
+  <script>
+    function sortTable(colIndex) {
+      const table = document.querySelector(".standings.sortable");
+      const tbody = table.tBodies[0];
+      const rows = Array.from(tbody.rows);
+      // Bestimme neue Sortierrichtung
+      const currentDir = table.getAttribute("data-sort-dir") || "desc";
+      const newDir = currentDir === "asc" ? "desc" : "asc";
+      // Sortiere Zeilen
+      rows.sort((a, b) => {
+        const aText = a.cells[colIndex].textContent.trim().toLowerCase();
+        const bText = b.cells[colIndex].textContent.trim().toLowerCase();
+        if (aText < bText) return newDir === "asc" ? -1 : 1;
+        if (aText > bText) return newDir === "asc" ? 1 : -1;
+        return 0;
+      });
+      // Anfügen in neuer Reihenfolge
+      tbody.append(...rows);
+      table.setAttribute("data-sort-dir", newDir);
+      // Header klassen-Update
+      table.querySelectorAll("th").forEach((th, i) => {
+        th.classList.toggle("sorted-asc", i === colIndex && newDir === "asc");
+        th.classList.toggle("sorted-desc", i === colIndex && newDir === "desc");
+        if (i !== colIndex) th.classList.remove("sorted-asc", "sorted-desc");
+      });
+    }
+  </script>
+
+  <script src="../js/header.js" defer></script>
+  <script src="../js/tournament-nav.js" defer></script>
+  <script src="../js/tournament.js" defer></script>
+</body>
+</html>

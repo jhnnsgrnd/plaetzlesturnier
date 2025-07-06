@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plätzlesturniere – Statistiken</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Global & tournament CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/tournament.css">
+
+  <style>
+    /* Sortierhinweis im Header */
+    .standings.sortable th {
+      cursor: pointer;
+      position: relative;
+      padding-right: 1.5em;
+    }
+    .standings.sortable th::after {
+      content: "⇅";
+      position: absolute;
+      right: 0.5em;
+      font-size: 0.8em;
+      color: #888;
+    }
+    .standings.sortable th.sorted-asc::after { content: "↑"; }
+    .standings.sortable th.sorted-desc::after { content: "↓"; }
+
+    /* Responsive wrapper */
+    .table-responsive {
+      overflow-x: auto;
+      margin-bottom: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <!-- ── HEADER WITH BURGER & NAV ─────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="../index.html" style="text-decoration:none; color:white;">Plätzlesturnier – Archiv</a>
+    </div>
+    <button class="burger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="../index.html">Über</a></li>
+        <li><a href="./turniere/2022.html">Ehem. Turniere</a></li>
+        <li><a href="./mannschaften.html">Mannschaften</a></li>
+        <li><a class="active" href="./statistiken.html">Statistiken</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────────────────────────── -->
+  <main class="container">
+  <br>
+    <h1>Meiste Turniersiege (seit 1985)</h1>
+    <div class="table-responsive">
+      <table class="standings">
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th>Anzahl Siege</th>
+            <th>Jahre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>KGK</td>
+            <td>12</td>
+            <td>1996, 1998, 1999, 2001, 2002, 2005, 2006, 2009, 2011, 2013, 2022, 2024</td>
+          </tr>
+          <tr>
+            <td>Windrad</td>
+            <td>5</td>
+            <td>1993, 1994, 1995, 1997, 2000</td>
+          </tr>
+          <tr>
+            <td>BSV Flums</td>
+            <td>4</td>
+            <td>2012, 2014, 2015, 2019</td>
+          </tr>
+          <tr>
+            <td>Jalg Pallurid</td>
+            <td>4</td>
+            <td>2016, 2017, 2018, 2023</td>
+          </tr>
+          <tr>
+            <td>Schlolles Erben</td>
+            <td>3</td>
+            <td>2003, 2004, 2010</td>
+          </tr>
+          <tr>
+            <td>Transmimer</td>
+            <td>2</td>
+            <td>1989, 1992</td>
+          </tr>
+          <tr>
+            <td>Zebras</td>
+            <td>2</td>
+            <td>1985, 1991</td>
+          </tr>
+          <tr>
+            <td>78/83/80/85</td>
+            <td>1</td>
+            <td>1987</td>
+          </tr>
+          <tr>
+            <td>Lungies</td>
+            <td>1</td>
+            <td>2008</td>
+          </tr>
+          <tr>
+            <td>Rapid Elch</td>
+            <td>1</td>
+            <td>1986</td>
+          </tr>
+          <tr>
+            <td>Spielverderber</td>
+            <td>1</td>
+            <td>1990</td>
+          </tr>
+          <tr>
+            <td>TLPP</td>
+            <td>1</td>
+            <td>1988</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script>
+    function sortTable(colIndex) {
+      const table = document.querySelector(".standings.sortable");
+      const tbody = table.tBodies[0];
+      const rows = Array.from(tbody.rows);
+      const currentDir = table.getAttribute("data-sort-dir") || "desc";
+      const newDir = currentDir === "asc" ? "desc" : "asc";
+
+      rows.sort((a, b) => {
+        const aText = a.cells[colIndex].textContent.trim().toLowerCase();
+        const bText = b.cells[colIndex].textContent.trim().toLowerCase();
+        if (aText < bText) return newDir === "asc" ? -1 : 1;
+        if (aText > bText) return newDir === "asc" ? 1 : -1;
+        return 0;
+      });
+
+      tbody.append(...rows);
+      table.setAttribute("data-sort-dir", newDir);
+
+      table.querySelectorAll("th").forEach((th, i) => {
+        th.classList.toggle("sorted-asc", i === colIndex && newDir === "asc");
+        th.classList.toggle("sorted-desc", i === colIndex && newDir === "desc");
+        if (i !== colIndex) th.classList.remove("sorted-asc", "sorted-desc");
+      });
+    }
+  </script>
+
+  <script src="../js/header.js" defer></script>
+  <script src="../js/tournament-nav.js" defer></script>
+  <script src="../js/tournament.js" defer></script>
+</body>
+</html>
